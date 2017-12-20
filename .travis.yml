@@ -1,0 +1,9 @@
+language: go
+go:
+- 1.9.x
+go_import_path: gcp.upspin.io
+install: true
+script: go test -short -race ./...
+notifications:
+  email:
+  - upspin-reviews@googlegroups.com
